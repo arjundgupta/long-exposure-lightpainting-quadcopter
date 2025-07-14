@@ -3,12 +3,12 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Drone Light Show Designer",
+  title: "Luminous",
   description: "Design, visualize, and export drone light show routines for ArduPilot",
   generator: "Next.js",
   manifest: "/manifest.json",
   keywords: ["drone", "light show", "ardupilot", "flight planning", "rgb led"],
-  authors: [{ name: "Drone Light Show Team" }],
+  authors: [{ name: "Rohanth, Arjun, Ruby" }],
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",

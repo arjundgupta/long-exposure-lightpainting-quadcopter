@@ -166,7 +166,7 @@ export default function DroneLightShow() {
       <div className="max-w-7xl mx-auto space-y-6">
         <div className="text-center space-y-2">
           <div className="flex items-center justify-center gap-4">
-            <h1 className="text-4xl font-bold text-gray-900">Drone Light Show Designer</h1>
+            <h1 className="text-4xl font-bold text-gray-900">Luminous</h1>
             <div className="flex items-center gap-2">
               {isOnline ? <Wifi className="w-5 h-5 text-green-500" /> : <WifiOff className="w-5 h-5 text-red-500" />}
               {installPrompt && (

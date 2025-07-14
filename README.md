@@ -3,7 +3,7 @@ A mini drone for light painting. Design your light path at [website domain], set
 
 ## What's light painting? 
 Light painting is a photographic technique that uses a moving light source (our drone) to *paint* over a scene while taking a long exposure photograph. A few couple of the photo effect this produces:
-(https://sublument.com/images/l/i/g/h/t/light-painting-cristina-1515-102010df.jpg width="100")(https://assets.hongkiat.com/uploads/light-painting/batman-on-fire.jpg width="100")
+(https://sublument.com/images/l/i/g/h/t/light-painting-cristina-1515-102010df.jpg)(https://assets.hongkiat.com/uploads/light-painting/batman-on-fire.jpg)
 
 ## Why did we make Luminous?
 Light painting can be tricky, especially when you're doing it alone. You need to finish the *painting* in a set amount of time it can take quite a few takes to get the exact result you want. We wanted to find a way to address this and realized that an autnomous phone paired with path design software could allow for custom light paths to be made and executed effortlessly.

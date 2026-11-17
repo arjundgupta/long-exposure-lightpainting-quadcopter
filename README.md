@@ -1,17 +1,40 @@
-# Luminous 
-A mini drone for light painting. Design your light path at [website domain], set up your camera, and let the drone do the rest. 
-[3D Model] [Image of Drone]
+# Luminous
 
-## What's light painting? 
-Light painting is a photographic technique that uses a moving light source (our drone) to *paint* over a scene while taking a long exposure photograph. A few couple of the photo effect this produces:
-![Image of a woman in a navy dress with yellow and white light painted arches](https://sublument.com/images/l/i/g/h/t/light-painting-cristina-1515-102010df.jpg)
+A mini drone for light painting. Draw a light path in the web app, set up your camera on a long exposure, and the drone flies the path with its LEDs on.
+
+<p>
+  <img src="assets/drone.jpg" alt="Luminous drone with its LED strips on" height="360">
+  <img src="assets/heart.jpg" alt="Light painted heart" height="360">
+</p>
+
+## What's light painting?
+
+A long exposure photo where a moving light draws over the scene. Doing it by hand takes a lot of retakes, so Luminous flies the path for you.
+
 ![Light painted dinosaur skeleton](https://64.media.tumblr.com/b159b70de17b5e26f704a4883638f06e/tumblr_inline_nqem1ixdLq1ss29o0_1280.jpg)
 
-## Why did we make Luminous?
-Light painting can be tricky, especially when you're doing it alone. You need to finish the *painting* in a set amount of time it can take quite a few takes to get the exact result you want. We wanted to find a way to address this and realized that an autnomous phone paired with path design software could allow for custom light paths to be made and executed effortlessly.
-The project also combined our hobbies: art, photogrphy, and drone design. 
+## How it works
 
-## BOM 
----
-### Disclaimer 
-We fried our sensor so our drone can't map the path autonomously, however we're pretty confident that if you build a replica with a working sensor that it'll work just fine!
+- **Web app:** draw the path, set LED colors on a timeline, preview the flight in 3D, and export it as an ArduPilot mission
+- **Drone script:** uploads the waypoints over MAVLink and changes the LED colors as it flies
+- **Optical flow and lidar sensor:** lets the drone track its position indoors
+
+## Parts
+
+- SpeedyBee F405 Mini flight controller
+- MicoAir MTF-02P optical flow and 6 m lidar
+- VCI Spark 1104 7100KV motors
+- Gemfan D51 5-blade props
+- Happymodel Mobula frame
+- BetaFPV Lava 3S 450 mAh LiPo
+
+## Tech
+
+pymavlink, ardupilot
+
+## Structure
+
+```
+app/, components/   path design web app
+drone_firmware/     ArduPilot script for waypoints and LEDs
+```

@@ -12,7 +12,7 @@ A mini drone for light painting. Draw a light path in the web app, set up your c
 A long exposure photo where a moving light draws over the scene. Doing it by hand takes a lot of retakes, so Luminous flies the path for you.
 
 <p align="center">
-  <img src="assets/light-painting-example.jpg" alt="Drone light painting over a runway at night" width="600">
+  <img src="assets/light-painting-example.jpg" alt="Drone light painting over a runway at night" width="755">
 </p>
 
 ## How it works
